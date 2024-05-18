@@ -1,9 +1,9 @@
 /**
- * @file gpio_driver.h
- * @brief Header file for GPIO driver functions.
- *
- * This file provides the declarations of functions and data types used for GPIO operations.
- */
+* @file gpio_driver.h
+* @brief Header file for GPIO driver functions.
+*
+* This file provides the declarations of functions and data types used for GPIO operations.
+*/
 
 #ifndef GPIO_DRIVER_H
 #define GPIO_DRIVER_H
@@ -11,9 +11,9 @@
 #include <avr/io.h>
 
 /**
- * @enum state_t
- * @brief Defines possible states of a GPIO pin.
- */
+* @enum state_t
+* @brief Defines possible states of a GPIO pin.
+*/
 typedef enum state {
 	LOW  = 0,
 	HIGH = 1,
@@ -24,9 +24,9 @@ typedef enum state {
 } state_t;
 
 /**
- * @enum direction_t
- * @brief Defines direction modes for GPIO pins.
- */
+* @enum direction_t
+* @brief Defines direction modes for GPIO pins.
+*/
 typedef enum direction{
 	INPUT        = 0,
 	OUTPUT       = 1,
@@ -34,12 +34,12 @@ typedef enum direction{
 }direction_t;
 
 /**
- * @struct port_t
- * @brief Represents a GPIO port configuration.
- *
- * This structure holds information about the GPIO port configuration including the port address, pin number,
- * direction, and offset for operations.
- */
+* @struct port_t
+* @brief Represents a GPIO port configuration.
+*
+* This structure holds information about the GPIO port configuration including the port address, pin number,
+* direction, and offset for operations.
+*/
 typedef struct
 {
 	volatile uint8_t *port;

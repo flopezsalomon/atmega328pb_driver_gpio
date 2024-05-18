@@ -12,7 +12,7 @@
 #define DIGITAL_INPUT_0_MASK (0x00)
 #define DIGITAL_INPUT_1_MASK (0x01)
 #define DIGITAL_INPUT_2_MASK (0x02)
-////////////////////////////////////////
+
 // Add here user level names for hardware
 #define NAVIGATON_LED			PIN_0
 #define STATUS_LED				PIN_5
@@ -25,19 +25,17 @@
 #define OFFSET_PORT_LED			OFFSET
 #define OFFSET_PORT_IGNITION	OFFSET
 #define OFFSET_PORT_DI			OFFSET
-
-#define USER_BUTTON			PIN_7
-#define PORT_USER_BUTTON	PORT_B
+#define USER_BUTTON				PIN_7
+#define PORT_USER_BUTTON		PORT_B
 #define OFFSET_PORT_USER_BUTTON OFFSET
-
 
 // user defines for USART port configuration
 #define DATA_BIT	EIGHT_BIT			// USART Data Bit Selection
 #define STOP_BIT	ONE_BIT				// USART Stop Bit Selection
 #define PARITY_MODE NONE				// USART Parity Bit Selection
 #define BAUDRATE	BAUD_PRESCALER      // Baud Rate
-#define BAUDRATE2	BAUD_PRESCALER2      
-#define MODE		ASYNCHRONOUS		//
+#define BAUDRATE2	BAUD_PRESCALER2
+#define MODE		ASYNCHRONOUS
 //////////////////////////////////////
 #define TIMER_FRECUENCY TEN_HERTZ
 #define PRESCALER _256_PRESCALER
@@ -54,11 +52,11 @@
 #define _100_MS_	10
 
 /////////////////////////////////
-#define ONE_HERTZ  1			// 1 second
-#define TEN_HERTZ  10			// 0.1 second or 100 ms
-#define _10_MS_	   100			// 0.01 second or 10 ms
-#define TWO_HERTS 2				// 500 ms
-#define _100_MS_  10
+#define ONE_HERTZ	1			// 1 second
+#define TEN_HERTZ	10			// 0.1 second or 100 ms
+#define _10_MS_		100			// 0.01 second or 10 ms
+#define TWO_HERTS	2				// 500 ms
+#define _100_MS_	10
 ///////////////////////////////////
 #define F_50Hz    50UL		// Time Period 20ms
 #define F_100Hz   100UL	// Time Period 10ms
@@ -85,13 +83,13 @@
 #define USART0_BASE_REG  (0xC0) // reference to pointer memory of register UCSR0
 #define USART1_BASE_REG  (USART0_BASE_REG + USART_OFFSET)
 
-#define SERVER_PARAMETERS_NUMBER 2
-#define APN_PARAMETERS_NUMBER  3
-#define MQTT_PARAMETERS_NUMBER 4
+#define SERVER_PARAMETERS_NUMBER	2
+#define APN_PARAMETERS_NUMBER		3
+#define MQTT_PARAMETERS_NUMBER		4
 
-#define WAITING_CONNECTION_METHOD 0
-#define WAITING_FOR_CONFIGURATION 1
-#define WAITING_FOR_NEW_MSG 2
+#define WAITING_CONNECTION_METHOD	0
+#define WAITING_FOR_CONFIGURATION	1
+#define WAITING_FOR_NEW_MSG			2
 
 #define SOCKET 1
 #define HTTP   2
